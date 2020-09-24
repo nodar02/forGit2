@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Tic Tac Toe</title>
+	<meta charset="utf-8">
+	<link  rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<p id="gamer">Player(O)</p>
+	<table>
+		<form>
+			<tr>
+				<td><input type="button"  maxlength="1" id="c00" onclick="B00()"></td>
+				<td><input type="button"  maxlength="1" id="c01" onclick="B01()"></td>
+				<td><input type="button"  maxlength="1" id="c02" onclick="B02()"></td>
+			</tr>
+			<tr>
+				<td><input type="button"  maxlength="1" id="c10" onclick="B10()"></td>
+				<td><input type="button"  maxlength="1" id="c11" onclick="B11()"></td>
+				<td><input type="button"  maxlength="1" id="c12" onclick="B12()"></td>
+			</tr>
+			<tr>
+				<td><input type="button"  maxlength="1" id="c20" onclick="B20()"></td>
+				<td><input type="button"  maxlength="1" id="c21" onclick="B21()"></td>
+				<td><input type="button"  maxlength="1" id="c22" onclick="B22()"></td>
+			</tr>
+		</form>
+	</table>
+	<button id="newgame" onclick="FullGame()">New Game</button>
+	<audio id="a1">
+		<source src="sounds/button-3.mp3" >
+	</audio>
+	<audio id="a2">
+		<source src="sounds/button-09.mp3" >
+	</audio>
+	<audio id="a3">
+		<source src="sounds/error.mp3" >
+	</audio>
+	<audio id="a4">
+		<source src="sounds/button4.m4a" >
+	</audio>
+	<div id = "mess">
+		<p id = "messp">Winner Player(X)</p>
+		<button id = "but">OK</button>
+	</div>
+<script src = "js/main.js"></script>
+</body>
+</html>
